@@ -1,0 +1,257 @@
+/* Chọn tất cả các thẻ để định dạng */
+* {
+    margin: 0;
+    padding: 0;
+    /* width/height của thẻ tính theo border */
+    box-sizing: border-box;
+}
+
+ul {
+    /* chuyển các thẻ con từ sắp xếp dọc sang sắp xếp ngang */
+    display: flex;
+
+    /* Tắt cái bullet tròn tròn của thẻ ul */
+    list-style: none;
+
+    /* Màu nền cho thẻ ul */
+    background-color: green;
+}
+
+ul a {
+    /* Mặc định thẻ a có đường gạch dưới. Ta tắt đường gạch dưới đi */
+    text-decoration: none;
+
+    /* màu chữ  */
+    color: white;
+
+    padding-left: 12px;
+    padding-right: 12px;
+
+    /* mặc định thẻ a là inline, nâng cấp nó lên inline-block để dùng được tính chất thứ 3 của block */
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* a .active: chọn thẻ có class active nằm trong thẻ a */
+
+/* a.active: chọn thẻ a có class active */
+
+ul a.active {
+    background-color: yellow;
+    color: red;
+}
+
+/* Banner */
+.banner {
+    /* làm background image hay dùng 3 cái bên dưới. 99% đúng. */
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* tăng chiều cao của banner */
+    padding-top: 250px;
+    padding-bottom: 250px;
+
+    /* Tránh chữ bên trong đụng lề trái hoặc phải */
+    padding-left: 15px;
+    padding-right: 15px;
+
+    text-align: center;
+}
+
+.banner h1 {
+    /* h1 kế thừa tính chất text-align:center của cha (banner) nó nên không cần chỉ định cho h1 */
+    /* text-align: center; */
+    color: blue;
+}
+
+.banner p {
+    /* p kế thừa tính chất text-align:center của cha (banner), nên muốn nó canh trái thỉ phải chỉ định lại text-algin:left */
+    text-align: left;
+    color: white;
+    /* tăng cỡ chữ */
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    /* Các ký tự giản ra 3px */
+    letter-spacing: 3px;
+
+    /* Thụt đầu dòng đoạn văn 40px */
+    text-indent: 40px;
+}
+
+.banner img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid grey;
+
+}
+
+.employee {
+    text-align: center;
+}
+
+.employee table,
+.employee table th,
+.employee table td {
+    border: 1px solid grey;
+}
+
+.employee table {
+    width: 100%;
+    /* chuyển 2 đường thành 1 đường */
+    border-collapse: collapse;
+}
+
+.employee table thead {
+    background-color: yellow;
+    color: red;
+}
+
+/* Dòng chẵn trong tbody */
+.employee table tbody tr:nth-child(even) {
+    background-color: rgb(226, 226, 232);
+}
+
+/* Khi hover lên dòng trong tbody thì màu sẽ đậm hơn */
+/* Khi đưa chuột vào thẻ thì gọi là hover */
+/* Dấu : là peseudo class , sẽ học sau */
+.employee table tbody tr:hover {
+    background-color: rgb(166, 166, 194);
+    cursor: pointer;
+}
+
+.employee h2 {
+    margin-bottom: 20px;
+}
+
+/* Các section có khoảng cách 30px */
+section {
+    margin-bottom: 30px;
+}
+
+.boss {
+    /* Tránh chữ đụng lề của trình duyệt (xấu) */
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.boss h2 {
+    text-align: center;
+}
+
+.boss img {
+    width: 200px;
+    height: 200px;
+    /* bo tròn */
+    border-radius: 50%;
+    /* Chống méo hình */
+    object-fit: cover;
+
+    /* hình dạt qua bên trái để chữ bọc lấy bên phải */
+    float: left;
+
+    /* tránh hình phía bên phải đụng chữ */
+    margin-right: 15px;
+}
+
+.boss>div {
+    /* div là khối nên width của nó theo cha nó là mặc định 100% */
+    max-width: 600px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    /* Nội dung của div không đụng border của div */
+    padding: 15px;
+
+    /* div nằm giữa so với section boss */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.product .col {
+    float: left;
+    /* div (block) mặc định width 100% */
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Điểm yếu của thẻ mà có float là chiều cao của nó không tính vào chiều cao của cha nó */
+/* Chiều cao của thằng con float tính vào chiều cao của thằng cha */
+.product .row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.product .col img {
+    width: 100%;
+}
+
+/* Dummy table */
+
+.dummy-table {
+    text-align: center;
+}
+
+.dummy-table h2 {
+    margin-bottom: 20px;
+}
+
+/*table, table-header-group, table-row-group, table-row, table-cell*/
+.table {
+    width: 100%;
+    box-sizing: border-box;
+    /*Tránh thanh cuộn ngang*/
+    display: table;
+    /*table*/
+    border-collapse: collapse;
+}
+
+.table,
+.td {
+    border: 1px solid black;
+}
+
+.thead {
+    display: table-header-group;
+    /*thead*/
+    font-weight: bold;
+    color: red;
+    background-color: yellow;
+
+}
+
+.tbody {
+    display: table-row-group;
+    /*tbody*/
+}
+
+.tr {
+    display: table-row;
+    /* tr*/
+}
+
+.tbody .tr:nth-child(even) {
+    background-color: rgb(226, 226, 232);
+}
+
+.tbody .tr:hover {
+    background-color: rgb(166, 166, 194);
+    cursor: pointer;
+}
+
+.td {
+    display: table-cell;
+    /*td*/
+}

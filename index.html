@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Cty TNHH Con Cò</title>
+    <!-- link:favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- layout -->
+    <!-- header+main+footer -->
+    <header>
+        <!-- menu -->
+        <!-- nav>ul>li*4>a -->
+        <!-- header, nav, ul, li là block -->
+        <!-- a là inline -->
+        <!-- Tính chiều ngang ul: ul là 100% so với nav -->
+        <!-- nav là 100% so với header -->
+        <!-- header là 100% so với body -->
+        <!-- body mặc định là 100% so với trình duyệt -->
+        <nav>
+            <ul>
+                <li>
+                    <a class="active" href="index.html">Trang Chủ</a>
+                </li>
+                <li>
+                    <a href="san-pham.html">Sản Phẩm</a>
+                </li>
+                <li>
+                    <a href="dich-vu.html">Dịch Vụ</a>
+                </li>
+                <li>
+                    <a href="lien-he.html">Liên Hệ</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- main, section là thuộc nhóm block -->
+        <!-- Banner -->
+        <!-- section.banner -->
+        <section class="banner">
+            <!-- Tên cty -->
+            <h1>CTY THHH Con Cò</h1>
+            <!-- Mô tả ngắn gọn cty -->
+            <p>
+                <!-- lorem100 -->
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci reprehenderit ad iste vel libero
+                tempora voluptas soluta? Inventore minima sed, porro nobis tenetur placeat laboriosam optio hic numquam
+                odio officia officiis mollitia, in explicabo temporibus. Provident nam vero saepe adipisci a, quaerat
+                hic porro quam consectetur temporibus labore. Assumenda reprehenderit voluptas mollitia ex, nobis
+                aliquid impedit modi quasi eveniet voluptates laudantium beatae aspernatur sequi provident quae totam.
+                Aliquid, officiis? Quaerat magnam quam eius fugit repellendus impedit non autem modi magni, laudantium
+                eum quia facere, laboriosam odit necessitatibus iure pariatur. Ad ducimus itaque sapiente architecto! In
+                tenetur eius ratione numquam ut!
+            </p>
+            <img src="images/conco.png" alt="Con Cò">
+        </section>
+
+        <!-- section.employee -->
+        <section class="employee">
+            <h2>Danh sách nhân viên</h2>
+            <!-- table>thead+tbody -->
+            <table>
+                <thead>
+                    <!-- tr>th*5 -->
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã</th>
+                        <th>Tên</th>
+                        <th>Phòng ban</th>
+                        <th>Lương</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- tr*4>td*5 -->
+                    <tr>
+                        <td>1</td>
+                        <td>NV001</td>
+                        <td>Tý</td>
+                        <td>Nhân sự</td>
+                        <td>8.000.000đ</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>NV002</td>
+                        <td>Sửu</td>
+                        <td>Kế toán</td>
+                        <td>9.000.000đ</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>NV003</td>
+                        <td>Dần</td>
+                        <td>Thiết kế</td>
+                        <td>10.500.000đ</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>NV004</td>
+                        <td>Mẹo</td>
+                        <td>Phần mềm</td>
+                        <td>11.500.000đ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- boss -->
+        <section class="boss">
+            <h2>Ông chủ keo kiệt!</h2>
+            <div>
+                <img src="images/cho-con.jpg" alt="Boss">
+                <!-- thông tin -->
+                <!-- lorem100 -->
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores recusandae architecto, doloremque
+                repellat incidunt exercitationem maxime blanditiis laboriosam nostrum iusto quia possimus inventore illo
+                delectus voluptate voluptatibus iste quos facere quis placeat vel mollitia qui! Magni corporis
+                voluptates repellendus repudiandae quod. Nemo non cupiditate officia, molestiae ipsum reprehenderit
+                totam possimus voluptas dolore, amet, corrupti ea ducimus autem ipsam dolorum blanditiis nostrum maxime
+                similique sit repellendus? Inventore, perferendis eius vero dolores a laborum deserunt tempora ea rem
+                quia dolorum vel, obcaecati provident excepturi quibusdam maiores esse, fugiat dolorem consequatur
+                magnam beatae sequi? Quos, sed deserunt explicabo assumenda consequatur accusantium voluptates
+                doloremque?
+            </div>
+        </section>
+        <!-- section.dummy-table -->
+        <section class="dummy-table">
+            <h2>Danh sách nhân viên</h2>
+            <div class="table">
+                <div class="thead">
+                    <div class="tr">
+                        <div class="td">STT</div>
+                        <div class="td">Mã</div>
+                        <div class="td">Tên</div>
+                        <div class="td">Phòng ban</div>
+                        <div class="td">Lương</div>
+                    </div>
+                </div>
+                <div class="tbody">
+                    <div class="tr">
+                        <div class="td">1</div>
+                        <div class="td">NV001</div>
+                        <div class="td">Tý</div>
+                        <div class="td">Nhân sự</div>
+                        <div class="td">8.000.000đ</div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">2</div>
+                        <div class="td">NV002</div>
+                        <div class="td">Sửu</div>
+                        <div class="td">Kế toán</div>
+                        <div class="td">9.000.000đ</div>
+                    </div>
+                    <div class="tr">
+                        <div class="td">3</div>
+                        <div class="td">NV003</div>
+                        <div class="td">Dần</div>
+                        <div class="td">Thiết kế</div>
+                        <div class="td">10.500.000đ</div>
+
+                    </div>
+                    <div class="tr">
+                        <div class="td">4</div>
+                        <div class="td">NV004</div>
+                        <div class="td">Mẹo</div>
+                        <div class="td">Phần mềm</div>
+                        <div class="td">11.500.000đ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
